@@ -102,14 +102,3 @@ footer {
     border-radius: 12px;
 
 }
-
-@media (max-width: 600px) {
-	main {
-			padding: 10px;
-	}
-	
-	section {
-			padding: 15px;
-	}
-}
-
