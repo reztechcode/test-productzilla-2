@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+	--primary-color: #2399e7;
+	--secondary-color: #2ecc71;
+	--text-color: #333;
+	--background-color: #bcbcbc;
+}
+body {
+	font-family: "Rubik", system-ui;
+	line-height: 1.6;
+	color: var(--text-color);
+	background-color: var(--background-color);
+	margin: 0;
+	padding: 0;
+}
+
+/* DarkMode Handle */
+.dark-mode {
+	--primary-color: #333;
+	--background-color: #121212;
+	--text-color: #fff;
+    color: #333;
+}
+
+#toggle-theme{
+    background-color: #2399e7;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+#toggle-theme-icon{
+    margin-right: 8px;
+}
+
+h2 {
+	color: var(--primary-color);
+    text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.card-header, .container{
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.card-header {
+	background-color: var(--primary-color);
+	color: white;
+	text-align: center;
+}
+
+.card {
+	background-color: white;
+	padding: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
+}
+
+.about{
+    text-align: center;
+}
+
+.form-control {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+input, select, button {
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 12px;
+}
+
+.btn-submit:hover {
+	background-color: #1a6496
+}
+
+
+footer {
+	text-align: center;
+	background-color: var(--primary-color);
+	color: white;
+    padding: 2px;
+    border-radius: 12px;
+
+}
+
+@media (max-width: 600px) {
+	main {
+			padding: 10px;
+	}
+	
+	section {
+			padding: 15px;
+	}
+}
+
